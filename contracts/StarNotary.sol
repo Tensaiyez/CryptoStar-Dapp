@@ -24,7 +24,7 @@ contract StarNotary is ERC721 {
     mapping(uint256 => uint256) public starsForSale;
 
     
-    // Create Star using the Struct
+    // IdToSate Star using the Struct
     function createStar(string memory _name, uint256 _tokenId) public { // Passing the name and tokenId as a parameters
         Star memory newStar = Star(_name); // Star is an struct so we are creating a new Star
         tokenIdToStarInfo[_tokenId] = newStar; // Creating in memory the Star -> tokenId mapping
