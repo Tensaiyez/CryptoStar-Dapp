@@ -7,6 +7,7 @@ ERC-721 Token Symbol:CST\
 - Truffle v5.1.9-nodeLTS.0 (core: 5.1.8)\
 - OpenZeppelin: 2.4.0\
 - MetaMask
+- Infura
 
 # **License**
 MIT License
