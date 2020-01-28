@@ -28,7 +28,10 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 var HDWalletProvider = require("truffle-hdwallet-provider");
-var mnemonic = "clutch horse peace kitten tired dawn artist leopard run twin result film";
+//Insert metamask backup seed phrase below
+var mnemonic = "";
+// Insert infura RinkebyEndpoint below
+var infuraEndpointLink = ""
 module.exports = {
     /**
      * Networks define how you connect to your ethereum client and let you set the
@@ -54,7 +57,7 @@ module.exports = {
         },
         rinkeby: {
             provider: function() {
-                return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/f153239ce33d4607b9cfe1bd60ad469a");
+                return new HDWalletProvider(mnemonic, infuraEndpointLink);
             },
             network_id: 4,
             gas: 4500000,
